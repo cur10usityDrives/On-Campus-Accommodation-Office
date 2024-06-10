@@ -1,9 +1,12 @@
+-- ************************************************************ --
+
 -- DATABASE CREATION --  
 
 create database db_project;
 use  db_project;
 
 -- ************************************************************ --
+
 -- CREATE TABLE QUERIES --  
 
 CREATE TABLE NextOfKin 
@@ -158,3 +161,22 @@ CREATE TABLE Enrollment (
   FOREIGN KEY (CourseNumber) REFERENCES Course(CourseNumber),
   FOREIGN KEY (BannerNumber) REFERENCES Student(BannerNumber)
 );
+
+-- ************************************************************ --
+
+-- CREATING INDICES --
+
+CREATE INDEX idx_student_bannernumber ON Student(BannerNumber);
+CREATE INDEX idx_nextofkin_bannernumber ON NextOfKin(BannerNumber);
+CREATE INDEX idx_room_roomnumber ON Room(RoomNumber);
+CREATE INDEX idx_residencehall_hallname ON ResidenceHall(HallName);
+CREATE INDEX idx_studentflats_staffid ON StudentFlats(StaffID);
+CREATE INDEX idx_lease_bannernumber ON Lease(BannerNumber);
+CREATE INDEX idx_lease_roomnumber ON Lease(RoomNumber);
+CREATE INDEX idx_invoice_roomnumber ON Invoice(RoomNumber);
+CREATE INDEX idx_invoice_bannernumber ON Invoice(BannerNumber);
+CREATE INDEX idx_invoice_leasenumber ON Invoice(LeaseNumber);
+CREATE INDEX idx_enrollment_coursenumber ON Enrollment(CourseNumber);
+CREATE INDEX idx_enrollment_bannernumber ON Enrollment(BannerNumber);
+
+-- ************************************************************ --
