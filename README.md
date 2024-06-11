@@ -13,10 +13,10 @@ This project implements a relational database schema using SQL to manage a unive
 
 ## Project Structure
 
-* **sql/schema.sql:** Contains SQL statements for creating the database schema, including table definitions with data types, primary and foreign keys for relationships, and any constraints (e.g., unique identifiers).
-* **sql/data.sql:** Contains SQL statements for populating the database with sample data for testing purposes. This allows you to experiment with queries without a real-world dataset.
-* **sql/test.sql:** Contains non-routine SQL statements that are semi-complex for testing the databse.
-* **README.md:** This documentation file (you are currently reading it!).
+* **`sql/schema.sql`:** Contains SQL statements for creating the database schema, including table definitions with data types, primary and foreign keys for relationships, and any constraints (e.g., unique identifiers).
+* **`sql/data.sql`:** Contains SQL statements for populating the database with sample data for testing purposes. This allows you to experiment with queries without a real-world dataset.
+* **`sql/test.sql`:** Contains non-routine SQL statements that are semi-complex for testing the databse.
+* **`README.md`:** This documentation file (you are currently reading it!).
 
 ## Usage
 
@@ -48,5 +48,5 @@ This project is currently intended for demonstration purposes. If you'd like to 
 
 ## Authors
 
-* Natnael Haile (MSCS, SFBU)
-* Prachi Sethi (MSCS, SFBU)
+* Natnael Haile (`MSCS, SFBU`)
+* Prachi Sethi (`MSCS, SFBU`)
